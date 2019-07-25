@@ -1,0 +1,98 @@
+.label {
+  position: relative;
+  display: block;
+  width: $label-width;
+  height: $label-height;
+  margin: 0 auto;
+  border: 1px solid #000;
+  border-radius: 50%;
+
+  .corner {
+    //position: absolute;
+    //display: block;
+    //width: #{$label-width};
+    //height: #{$label-height / 2};
+    //left: 0;
+    margin: 0;
+    padding: 0;
+    background: rgba(#000, .4);
+
+    &:before,
+    &:after {
+      content: '';
+      //display: inline-block;
+      //width: 50%;
+      //height: 100%;
+      width: #{$label-width / 2};
+      height: #{$label-height / 2};
+    }
+
+    &:before {
+      float: left;
+      clear: left;
+    }
+
+    &:after {
+      float: right;
+      clear: right;
+    }
+
+    &.top {
+      &:before {
+        shape-outside: radial-gradient(circle at bottom right, transparent $shape-rounding, red $shape-rounding);
+      }
+
+      &:after {
+        shape-outside: radial-gradient(circle at bottom left, transparent $shape-rounding, red $shape-rounding);
+      }
+    }
+
+    &.bottom {
+      &:before {
+        shape-outside: radial-gradient(circle at top right, transparent $shape-rounding, red $shape-rounding);
+      }
+
+      &:after {
+        shape-outside: radial-gradient(circle at top left, transparent $shape-rounding, red $shape-rounding);
+      }
+    }
+  }
+
+  .top {
+    //top: 0;
+  }
+
+  .bottom {
+    //bottom: 0;
+  }
+
+  //.left {
+  //  left: 0;
+  //  float: left;
+  //  clear: left;
+  //}
+  //
+  //.right {
+  //  right: 0;
+  //  float: right;
+  //  clear: right;
+  //}
+
+  //.top.left {
+  //  shape-outside: radial-gradient(circle at bottom right, transparent 69%, red 69%)
+  //}
+}
+
+.label-content {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+#label-headline {
+  top: 5px;
+}
+
+#label-foot {
+  font-size: .3em;
+}

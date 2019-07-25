@@ -1,0 +1,16 @@
+.rounded {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+
+  .rounded-item {
+    position: absolute;
+    font-size: inherit;
+    display: block;
+    min-width: 1em;
+    margin: 0;
+    text-align: center;
+    transform-origin:0 100%;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "mixit_label",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "sass": "^1.22.7"
+  }
+}
