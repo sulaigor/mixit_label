@@ -24,14 +24,13 @@ function circularText(elemId, radius, params = {}) {
   });
 }
 
-var radius = document.body.offsetWidth / 2;
-circularText('label-headline', radius, {
-  deg: 4,
-  origin: 0,
-});
-
-circularText('label-foot', radius, {
-  deg: 1.1,
-  origin: 180,
-});
-
+// var radius = document.body.offsetWidth / 2;
+// circularText('label-headline', radius, {
+//   deg: 4,
+//   origin: 0,
+// });
+//
+// circularText('label-foot', radius, {
+//   deg: 1.1,
+//   origin: 180,
+// });
